@@ -1,6 +1,6 @@
 {
-  "name": "eth-keyring-controller",
-  "version": "5.6.0",
+  "name": "cfx-keyring-controller",
+  "version": "5.6.1",
   "description": "A module for managing various keyrings of Ethereum accounts, encrypting them, and using them.",
   "main": "index.js",
   "scripts": {
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MetaMask/KeyringController.git"
+    "url": "git+ssh://git@github.com/yqrashawn/KeyringController.git"
   },
   "keywords": [
-    "ethereum",
-    "metamask",
+    "conflux",
+    "portal",
     "accounts",
     "keys"
   ],
-  "author": "Dan Finlay <dan@danfinlay.com>",
+  "author": "yqrashawn <namy.19@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MetaMask/KeyringController/issues"
+    "url": "https://github.com/yqrashawn/KeyringController/issues"
   },
-  "homepage": "https://github.com/MetaMask/KeyringController#readme",
+  "homepage": "https://github.com/yqrashawn/KeyringController#readme",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@metamask/eslint-config": "^2.1.0",
@@ -47,6 +47,7 @@
     "eth-sig-util": "^1.4.0",
     "eth-simple-keyring": "^3.5.0",
     "ethereumjs-util": "^5.1.2",
+    "js-conflux-sdk": "^0.8.0-alpha",
     "loglevel": "^1.5.0",
     "obs-store": "^4.0.3"
   },

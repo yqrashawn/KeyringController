@@ -11,6 +11,7 @@ const { normalize: normalizeAddress } = require('eth-sig-util')
 
 const SimpleKeyring = require('eth-simple-keyring')
 const HdKeyring = require('eth-hd-keyring')
+const { Message: CfxMessage, util: cfxUtil } = require('js-conflux-sdk/dist/js-conflux-sdk.umd.min.js')
 
 const keyringTypes = [
   SimpleKeyring,
@@ -369,7 +370,9 @@ class KeyringController extends EventEmitter {
     const address = normalizeAddress(msgParams.from)
     return this.getKeyringForAccount(address)
       .then((keyring) => {
-        return keyring.signPersonalMessage(address, msgParams.data, opts)
+        const msg = new CfxMessage({hash: cfxUtil.sign.sha3(msgParams.data)})
+        return Promise.resolve(msg.sign(`0x${keyring.getPrivateKeyFor(address).toString('hex')}`).signature)
+        // return keyring.signPersonalMessage(address, msgParams.data, opts)
       })
   }
 
