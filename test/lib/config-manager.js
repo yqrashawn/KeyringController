@@ -1,5 +1,5 @@
-const ethUtil = require('ethereumjs-util')
-const { normalize } = require('eth-sig-util')
+const ethUtil = require('cfx-util')
+const { normalize } = require('cfx-sig-util')
 const MetamaskConfig = require('./config.js')
 
 

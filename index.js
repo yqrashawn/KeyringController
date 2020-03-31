@@ -1,16 +1,16 @@
 
 const { EventEmitter } = require('events')
 const log = require('loglevel')
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('cfx-util')
 
 const { BN } = ethUtil
 const bip39 = require('bip39')
 const ObservableStore = require('obs-store')
 const encryptor = require('browser-passworder')
-const { normalize: normalizeAddress } = require('eth-sig-util')
+const { normalize: normalizeAddress } = require('cfx-sig-util')
 
-const SimpleKeyring = require('eth-simple-keyring')
-const HdKeyring = require('eth-hd-keyring')
+const SimpleKeyring = require('cfx-simple-keyring')
+const HdKeyring = require('cfx-hd-keyring')
 const { Message: CfxMessage, util: cfxUtil } = require('js-conflux-sdk/dist/js-conflux-sdk.umd.min.js')
 
 const keyringTypes = [
