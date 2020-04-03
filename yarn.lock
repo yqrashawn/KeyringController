@@ -357,6 +357,11 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+big.js@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
+  integrity sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==
+
 bindings@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
@@ -491,16 +496,16 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cfx-hd-keyring@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.2.tgz#960a4ece53e903805652c59826ff3b3058fc106f"
-  integrity sha512-3pneO2c1s9+wJzkkwUDmm46swy4fKhUv5+UGbpKNYlQPv2FudnnSfjdYgrUCyTO71KGWdAU5GIF/96OoenUJxg==
+cfx-hd-keyring@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.3.tgz#a5c14aa536d68a2c7d662d1ba56b0cf48e76b100"
+  integrity sha512-jwCk2QLeA8FcyaKmqdpR7r5+4jreKXZxwMTijmLY0WYwv2BQ1xKeqbwqOwWtHp1g8HnzdFIbzsNrwG32w+8eVw==
   dependencies:
     bip39 "^2.2.0"
     cfx-sig-util "^0.0.1-a"
-    cfx-simple-keyring "^0.0.1"
-    cfx-util "^0.0.1-c"
-    cfx-wallet "^0.0.1-b"
+    cfx-simple-keyring "^0.0.2"
+    cfx-util "^0.0.2"
+    cfx-wallet "^0.0.1-c"
     ethereumjs-abi "^0.6.5"
     events "^1.1.1"
     xtend "^4.0.1"
@@ -517,14 +522,14 @@ cfx-sig-util@^0.0.1-a:
     tweetnacl "^1.0.0"
     tweetnacl-util "^0.15.0"
 
-cfx-simple-keyring@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.0.1.tgz#9ae9bc09bd5132b59165f45dd16603a29edfe5db"
-  integrity sha512-/nP6luHn2UtXiiHxhY4tWis++ltUcklHIwF1TrRJpCbJtSykIwoJji2uR2krQ3Vw7gUj5llBQ6boljbgxY7EAA==
+cfx-simple-keyring@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.0.2.tgz#a5c4950a4b5356056510cbaf1b0d3ddc42dcea49"
+  integrity sha512-lUagxBl3nT1DysIoUGW8eJUFaqNMHs49E1+6FiS+hhTrwX1Qc3oiWHCZMo+OP8ji7xyxE3+jbdtrCiiQ9vC6WA==
   dependencies:
     cfx-sig-util "^0.0.1-a"
-    cfx-util "^0.0.1-b"
-    cfx-wallet "^0.0.1-a"
+    cfx-util "^0.0.2"
+    cfx-wallet "^0.0.1-c"
     ethereumjs-abi "0.6.5"
     events "^1.1.1"
     xtend "^4.0.1"
@@ -542,7 +547,20 @@ cfx-util@^0.0.1-b, cfx-util@^0.0.1-c:
     rlp "^2.2.4"
     secp256k1 "^3.0.1"
 
-cfx-wallet@^0.0.1-a, cfx-wallet@^0.0.1-b, cfx-wallet@^0.0.1-c:
+cfx-util@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/cfx-util/-/cfx-util-0.0.2.tgz#e9b621f41802a790ee65b2a9656134826d0b6bed"
+  integrity sha512-rKQmEX0yooRWyPTRjheiNQ4iv36/holHwj0TqSlFWsnufUdTzAWZPNyMNbNn3bO4D9IqFK9PJrnsIxbCR+hwZA==
+  dependencies:
+    "@types/bn.js" "^4.11.3"
+    bn.js "^4.11.0"
+    create-hash "^1.1.2"
+    ethjs-util "0.1.6"
+    keccak "^3.0.0"
+    rlp "^2.2.4"
+    secp256k1 "^3.0.1"
+
+cfx-wallet@^0.0.1-c:
   version "0.0.1-c"
   resolved "https://registry.yarnpkg.com/cfx-wallet/-/cfx-wallet-0.0.1-c.tgz#0b0268465fd867dd669cc2248211f8e9daf5ba9d"
   integrity sha512-l7Phw6PNl6ep8v//rofqwDFK2Mne3kk3lLg47n+YEs//5peqkFcc/mEQRdjMHL+ZCDah+La8ewa0fRF810JPEw==
@@ -1565,12 +1583,13 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-js-conflux-sdk@^0.8.0-alpha:
-  version "0.8.0-alpha"
-  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.8.0-alpha.tgz#7d76ee0c0b658d9080489cbc84be48b0ce2b42fe"
-  integrity sha512-BAWAs2xL8mN5GsqNQGAACz47J/seXfwM4v4S9BNms5tOvfHNOE2vgGlae0fQVyvrDzhVDBUxsQqvPyWkc7uYNw==
+js-conflux-sdk@^0.9.0-alpha:
+  version "0.9.0-alpha"
+  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.9.0-alpha.tgz#fb0b2c7558746533cfc42cbb9f1135a9d55c5b34"
+  integrity sha512-L4T8AAenfJs0YF5fAMO6V5UfX4BuTTscib7cY/4toTus+dXEtrfLGfUrxUJzZpO3cUg+hOr+AeQnlYliL8o1Rg==
   dependencies:
     "@babel/runtime" "^7.8.4"
+    big.js "^5.2.2"
     esm "^3.2.25"
     jsbi "^3.1.1"
     keccak "^2.0.0"

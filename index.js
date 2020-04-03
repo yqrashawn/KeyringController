@@ -11,7 +11,7 @@ const { normalize: normalizeAddress } = require('cfx-sig-util')
 
 const SimpleKeyring = require('cfx-simple-keyring')
 const HdKeyring = require('cfx-hd-keyring')
-const { Message: CfxMessage, util: cfxUtil } = require('js-conflux-sdk/dist/js-conflux-sdk.umd.min.js')
+// const { Message: CfxMessage, util: cfxUtil } = require('js-conflux-sdk/dist/js-conflux-sdk.umd.min.js')
 
 const keyringTypes = [
   SimpleKeyring,
