@@ -37,6 +37,7 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
     "polyfill-crypto.getrandomvalues": "^1.0.0",
+    "semantic-release": "^17.1.1",
     "sinon": "^7.2.7"
   },
   "dependencies": {
@@ -47,7 +48,7 @@
     "cfx-sig-util": ">=0.0.4",
     "cfx-simple-keyring": ">=0.0.4",
     "cfx-util": ">=0.0.3",
-    "js-conflux-sdk": "0.10.1",
+    "js-conflux-sdk": "0.10.3",
     "loglevel": "^1.5.0",
     "obs-store": "^4.0.3"
   },
