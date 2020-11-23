@@ -731,6 +731,11 @@ base64-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
   integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
 
+base64-js@^1.3.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
@@ -914,6 +919,14 @@ buffer@^5.2.1:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
 
+buffer@^5.6.0:
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
+  integrity sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.1.13"
+
 builtins@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
@@ -1002,21 +1015,21 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cfx-hd-keyring@>=0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.6.tgz#7f2fc3b403047181684af5d1125f7d6393b7b275"
-  integrity sha512-IWBN27P3/cbUbxppvP1c/+99t3RxNWDJaVWtoPEiX04UyCPnkKJedoDWyHyA+JwbA9JQX/8x4Dd2pNXbwGUEgQ==
+cfx-hd-keyring@>=0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.7.tgz#612d7cffdc706653d8c35d83d4b312bd85f719fc"
+  integrity sha512-SqymFv1B69aCWe+JcYhXpy2qmgm5k6fm68R7d++hZNIw08KrcO5TrY0VZQ3Necp7jrPPf3YtByPZpUG6ZW1YSg==
   dependencies:
     bip39 "^2.2.0"
-    cfx-sig-util ">=0.0.4"
-    cfx-simple-keyring ">=0.0.4"
+    cfx-sig-util ">=2.0.3"
+    cfx-simple-keyring ">=0.0.5"
     cfx-util ">=0.0.3"
     cfx-wallet ">=0.0.4"
     ethereumjs-abi "^0.6.5"
     events "^1.1.1"
     xtend "^4.0.1"
 
-cfx-sig-util@>=0.0.3, cfx-sig-util@>=0.0.4:
+cfx-sig-util@>=0.0.3:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/cfx-sig-util/-/cfx-sig-util-0.0.4.tgz#ccbae7ba1803c90b06651081d57dae1da15395a1"
   integrity sha512-VisMXx5LY2iPYR5IUiObyg07MEmJrk4d3TE437aVjj6oZUZLpjS3agfNg1Xws1ZzPVJLlT/1vkfukK6uwwRl1Q==
@@ -1028,10 +1041,22 @@ cfx-sig-util@>=0.0.3, cfx-sig-util@>=0.0.4:
     tweetnacl "^1.0.0"
     tweetnacl-util "^0.15.0"
 
-cfx-simple-keyring@>=0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.0.4.tgz#df67183b791fe419a132c685fa02ae89d6371e2b"
-  integrity sha512-t85P77f6+Rbqsr83+hZOPZhsjFjEydbm383FKS3Yti42DtjYoi7h9ojMxIwg0Kn3ebcqGdXvZin5o5aMs6WGuA==
+cfx-sig-util@>=2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/cfx-sig-util/-/cfx-sig-util-2.0.3.tgz#163b007591ccde4a78939fc69647bf1582080ce3"
+  integrity sha512-Pajrr2l96vWGzwT7bn8D6x6Cr7oYPOr16vLlozbi1DPKUbNq3hbcE2zvPF26HxdoE0rkbSy/BcArMBAu/JkAkA==
+  dependencies:
+    buffer "^5.6.0"
+    cfx-util ">=0.0.3"
+    elliptic "^6.4.0"
+    ethereumjs-abi "0.6.5"
+    tweetnacl "^1.0.0"
+    tweetnacl-util "^0.15.0"
+
+cfx-simple-keyring@>=0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.0.5.tgz#ec53b244cb009dc3b7c75ce4e34e20bd38d03532"
+  integrity sha512-jJYZ4DruZG9LCKxmnqihtjx+SFLSxxjqLhlzHNrjE1jj48RqexRdFxoX0J9AqDgHSmndVM8DXoOnLZbQK+KeAQ==
   dependencies:
     cfx-sig-util ">=0.0.3"
     cfx-util ">=0.0.3"
@@ -2769,6 +2794,11 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@~0.4.13:
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+ieee754@^1.1.13:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
 ieee754@^1.1.4:
   version "1.1.13"
