@@ -2,7 +2,7 @@ const { strict: assert } = require('assert')
 const ethUtil = require('cfx-util')
 
 const { BN } = ethUtil
-const {normalize: normalizeAddress } = require('cfx-sig-util')
+const { normalize: normalizeAddress } = require('cfx-sig-util')
 
 const sinon = require('sinon')
 const { Wallet } = require('cfx-wallet')
