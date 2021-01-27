@@ -44,9 +44,9 @@
     "bip39": "^2.4.0",
     "bluebird": "^3.5.0",
     "browser-passworder": "^2.0.3",
-    "cfx-hd-keyring": ">=0.0.10",
+    "cfx-hd-keyring": ">=0.0.11",
     "cfx-sig-util": ">=2.1.1",
-    "cfx-simple-keyring": ">=0.1.2",
+    "cfx-simple-keyring": ">=0.2.0",
     "cfx-util": ">=0.0.4",
     "loglevel": "^1.5.0",
     "obs-store": "^4.0.3"

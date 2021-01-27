@@ -1015,14 +1015,14 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cfx-hd-keyring@>=0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.10.tgz#6fa73108836ce4d7cda05a262d6451fce17978cc"
-  integrity sha512-cDOTeqr7dE/jSWYNXhdvwYn6nNHj5BgDVCj3Y2z/ZDnne6G0ttGJUf+yHRZcb6LJuryVWr9OffLw+sJjkMTWmw==
+cfx-hd-keyring@>=0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/cfx-hd-keyring/-/cfx-hd-keyring-0.0.11.tgz#c396ff859356ddeed9331f150892e20b9fba81e4"
+  integrity sha512-Jof1Y/uDnxM6vJPwYAbvHmMP07yiOcCxddCSNyIrvTWmLQ2bKpPddE9pKfKsrWWlFOFPETWpL5NIbRIcwrstQg==
   dependencies:
     bip39 "^2.2.0"
     cfx-sig-util ">=2.1.1"
-    cfx-simple-keyring ">=0.1.2"
+    cfx-simple-keyring ">=0.2.0"
     cfx-util ">=0.0.3"
     cfx-wallet ">=0.0.5"
     events "^1.1.1"
@@ -1040,10 +1040,10 @@ cfx-sig-util@>=2.1.1:
     tweetnacl "^1.0.0"
     tweetnacl-util "^0.15.0"
 
-cfx-simple-keyring@>=0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.1.2.tgz#3b17882eb278b7cad14bb9a71ebeb0c967d63cc9"
-  integrity sha512-CulzQkeqWYxKj5NXlc6kcLUgWGs5fEaKQoNnDNLMeg+6LiGdaJQ7mQoPRJ814euUckFQJJV5pSDg/ANelIM2bg==
+cfx-simple-keyring@>=0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.2.0.tgz#bafc0ece2c65331532199c8b2c5c8340324068a1"
+  integrity sha512-wYc3KAA7o2znrbXCEftGpdbVKxIQLQst9iqBD0trwHPyQBcw/SyC8eOsf4HzXkM6tA75XtQNluxPfAj2HSontw==
   dependencies:
     cfx-sig-util ">=2.1.1"
     cfx-util ">=0.0.4"
