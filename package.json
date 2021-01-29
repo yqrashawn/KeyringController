@@ -12,12 +12,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/yqrashawn/KeyringController.git"
   },
-  "keywords": [
-    "conflux",
-    "portal",
-    "accounts",
-    "keys"
-  ],
+  "keywords": ["conflux", "portal", "accounts", "keys"],
   "author": "yqrashawn <namy.19@gmail.com>",
   "license": "ISC",
   "bugs": {
@@ -44,16 +39,14 @@
     "bip39": "^2.4.0",
     "bluebird": "^3.5.0",
     "browser-passworder": "^2.0.3",
-    "cfx-hd-keyring": ">=0.0.11",
-    "cfx-sig-util": ">=2.1.1",
-    "cfx-simple-keyring": ">=0.2.0",
+    "cfx-hd-keyring": ">=0.0.12",
+    "cfx-sig-util": ">=2.1.2",
+    "cfx-simple-keyring": ">=0.2.1",
     "cfx-util": ">=0.0.4",
     "loglevel": "^1.5.0",
     "obs-store": "^4.0.3"
   },
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
